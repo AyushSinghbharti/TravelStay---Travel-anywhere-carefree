@@ -6,7 +6,7 @@ export const defaultStyles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'white',
     },
-    inputFeild: {
+    inputField: {
         height: 44,
         borderWidth: 1,
         borderColor: '#ABABAB',
