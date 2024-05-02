@@ -20,15 +20,13 @@ TravelStay offers a seamless booking experience, allowing users to browse throug
 <img src="https://github.com/AyushSinghbharti/TravelStay---Travel-anywhere-carefree/assets/100284852/933708c2-6c7b-45fb-a83f-aab4004acd6b" alt="Overview Image 6" width=auto height="500">
 <img src="https://github.com/AyushSinghbharti/TravelStay---Travel-anywhere-carefree/assets/100284852/20da3058-86c8-4719-8e98-ebc9de9718f4" alt="Overview Image 7" width=auto height="500">
 
-
+##
 The UI of TravelStay is designed to be visually appealing and intuitive, offering users a seamless navigation experience. From the elegant login screen to the interactive map view showcasing available hotels, every aspect of the app is crafted with user convenience in mind.
 
 ## Future Aspects
 TravelStay is continuously evolving to meet the growing needs of travelers worldwide. Here are some potential future enhancements:
-- **Booking Enhancements**: Implement features such as real-time availability updates and instant booking confirmation to streamline the booking process.
-- **Personalized Recommendations**: Utilize machine learning algorithms to provide personalized hotel recommendations based on user preferences and past bookings.
-- **Social Integration**: Integrate social media platforms to allow users to share their travel experiences and recommendations with friends and family.
-- **Localization**: Add support for multiple languages and currencies to cater to a global user base.
+- **Booking Enhancements**: Implement features such as real-time availability updates and instant booking confirmation to streamline the booking process and proper booking pages.
+- **Design remaining pages**: Will design remaining pages with better UI.
 
 ## Getting Started
 
