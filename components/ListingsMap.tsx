@@ -24,13 +24,12 @@ const ListingsMap = ({ listings }: Props) => {
   };
 
   return (
-    <View style={defaultStyles.container}>
       <MapView
         clusterColor="white"
         clusterTextColor="black"
         clusterFontFamily="rob-sb"
         animationEnabled={false}
-        style={StyleSheet.absoluteFill}
+        style={[StyleSheet.absoluteFill, defaultStyles.container]}
         provider={PROVIDER_GOOGLE}
         showsUserLocation={true}
         showsMyLocationButton={true}
@@ -53,7 +52,6 @@ const ListingsMap = ({ listings }: Props) => {
           </Marker>
         ))}
       </MapView>
-    </View>
   );
 };
 

@@ -54,7 +54,7 @@ const Page = () => {
       <TextInput
         autoCapitalize="none"
         placeholder="email"
-        style={[defaultStyles.inputFeild, { marginBottom: 30 }]}
+        style={[defaultStyles.inputField, { marginBottom: 30 }]}
       />
       <TouchableOpacity style={[defaultStyles.btn]}>
         <Text style={[defaultStyles.btnText]}>Login</Text>
