@@ -124,7 +124,11 @@ const Page = () => {
       )}
 
       {isSignedIn && (
-        <Button title="Log Out" onPress={() => signOut()} color={Colors.dark} />
+        <>
+          <TouchableOpacity onPress={() => signOut()} style={styles.button}>
+            <Text style={styles.buttonTitle}>Log Out</Text>
+          </TouchableOpacity>
+        </>
       )}
       {!isSignedIn && (
         <Link href={"/(modals)/login"} asChild>
@@ -175,6 +179,19 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     gap: 8,
+  },
+  button: {
+    backgroundColor: "#5783db",
+    padding: 16,
+    marginHorizontal: 24,
+    borderRadius: 8,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  buttonTitle: {
+    fontFamily: "mon-b",
+    fontSize: 16,
+    color: "#fff",
   },
 });
 

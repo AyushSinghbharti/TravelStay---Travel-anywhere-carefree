@@ -6,6 +6,8 @@ import { useEffect } from "react";
 import { TouchableOpacity } from "react-native";
 import * as SecureStore from "expo-secure-store";
 import { ClerkProvider, useAuth } from "@clerk/clerk-expo";
+import ModalHeaderText from "@/components/ModalHeaderText";
+import Colors from "@/constants/Colors";
 
 const CLERK_PUBLISHABLE_KEY = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
@@ -46,7 +48,7 @@ export default function RootLayout() {
     mon: require("../assets/fonts/Montserrat-Regular.ttf"),
     "mon-b": require("../assets/fonts/Montserrat-Bold.ttf"),
     "mon-sb": require("../assets/fonts/Montserrat-SemiBold.ttf"),
-    "rob" : require("../assets/fonts/Robosto Static/RobotoCondensed-Regular.ttf"),
+    rob: require("../assets/fonts/Robosto Static/RobotoCondensed-Regular.ttf"),
     "rob-sb": require("../assets/fonts/Robosto Static/RobotoCondensed-SemiBold.ttf"),
     "rob-b": require("../assets/fonts/Robosto Static/RobotoCondensed-Bold.ttf"),
   });
@@ -120,18 +122,28 @@ function RootLayoutNav() {
       <Stack.Screen
         name="(modals)/booking"
         options={{
-          title: "Booking",
+          presentation: "transparentModal",
+          animation: "fade",
+          headerTransparent: true,
+          headerBackVisible: false,
+          headerTitle: () => <ModalHeaderText />,
           headerTitleStyle: {
             fontFamily: "mon-sb",
           },
           headerLeft: () => (
-            <TouchableOpacity onPress={() => router.back()}>
-              <Ionicons name="close-outline" size={28} />
+            <TouchableOpacity
+              onPress={() => router.back()}
+              style={{
+                backgroundColor: "white",
+                borderColor: Colors.grey,
+                borderRadius: 20,
+                borderWidth: 1,
+                padding: 4,
+              }}
+            >
+              <Ionicons name="close-outline" size={22} />
             </TouchableOpacity>
           ),
-          headerTitleAlign: "center",
-          presentation: "transparentModal",
-          animation: "fade",
         }}
       />
     </Stack>
