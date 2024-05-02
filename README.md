@@ -37,7 +37,7 @@ To get the Music Playing App up and running on your local machine, follow these 
 1. **Clone the repository**:
 
    ```
-   git clone [https://github.com/AyushSinghbharti/TravelStay---Travel-anywhere-carefree.git]
+   git clone https://github.com/AyushSinghbharti/TravelStay---Travel-anywhere-carefree.git
    ```
 
 2. **Install dependencies**:
